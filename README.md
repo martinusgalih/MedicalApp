@@ -11,7 +11,7 @@ Welcome to my practice project for exploring SwiftGen and XcodeGen!
 2. **Setup Script:**
    This script will handle initial configuration and dependency installation.
    ```bash
-  ./setup
+   ./setup
   
 
 
