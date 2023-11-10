@@ -1,0 +1,14 @@
+// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+// UIColorExtension.stencil
+
+import UIKit
+
+extension UIColor {
+  // Genereated code from Colors.xcassets, do not change this code manually
+  {% for asset in catalogs.first.assets %}
+    public static var {{ asset.name }}: UIColor {
+        return UIColor(named: "{{ asset.name }}", in: MedicalAppUtilities.bundle, compatibleWith: nil)!
+    }
+
+  {% endfor %}
+}

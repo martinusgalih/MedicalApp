@@ -7,76 +7,742 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		907519DB2AFC05DF00203800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907519DA2AFC05DF00203800 /* AppDelegate.swift */; };
-		907519DD2AFC05DF00203800 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907519DC2AFC05DF00203800 /* SceneDelegate.swift */; };
-		907519DF2AFC05DF00203800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907519DE2AFC05DF00203800 /* ViewController.swift */; };
-		907519E22AFC05DF00203800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907519E02AFC05DF00203800 /* Main.storyboard */; };
-		907519E42AFC05E100203800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907519E32AFC05E100203800 /* Assets.xcassets */; };
-		907519E72AFC05E100203800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907519E52AFC05E100203800 /* LaunchScreen.storyboard */; };
+		06D55EEF5DE6B9F47C3AA97D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE9193DAE757F929630271 /* LoginViewModel.swift */; };
+		19E49C0A3F83D7BF4AD49DCF /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 11CE6C596AC2D830C3B8EFF5 /* Proxima Nova Bold.otf */; };
+		274B6A904567F1BFF660E849 /* Proxima Nova Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C974BE86685C362885DDE663 /* Proxima Nova Black.otf */; };
+		2D6620BB24CFA50DA9490D92 /* WelcomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A09B632D77006F379F8B0 /* WelcomeHeaderCell.swift */; };
+		30E2E46B4788CEB9B8100BB9 /* WelcomeHeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69CEEEB6CDFFC005A46D42B /* WelcomeHeaderCellViewModel.swift */; };
+		33681A8483530AD234FAC250 /* MedicalAppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220474EF6ACF57AD0F19085D /* MedicalAppUtilities.swift */; };
+		38E97842A592533F51D6CCCD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8B122D691330CAE7D72AC /* Colors.swift */; };
+		3E54E67B2B17F6AFFFF49044 /* Proxima Nova Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24E9A95F4269DB8EA9530DA0 /* Proxima Nova Extrabold.otf */; };
+		444F7AB7AAEAA9C8FA68EFF7 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF00E7E70C9E7F285289CA5 /* FormViewController.xib */; };
+		56F476855D9799EB4AF38A05 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C58C6AD98E2C0D75A3390 /* Fonts.swift */; };
+		6005BC25FE573C31D002DD53 /* NSObject+className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C4361FEBE529CEE4DFD3 /* NSObject+className.swift */; };
+		6242E31168BBD8BD3EBF4C3E /* UIView+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9885D0F3725465AC5F7DC1B /* UIView+cornerRadius.swift */; };
+		6CE708836B3B9B67BF6B3AA4 /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD307EB1B632082B0CF6C4 /* UIApplication+extension.swift */; };
+		7B4120B01080C7A5D9A03754 /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC01ACB15F24C03472357BFC /* Proxima Nova Thin.otf */; };
+		80BD269373F3BAD7858A5631 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A65B2D9C637A30F7878044 /* Image.swift */; };
+		904B5CC92AFDC54500A936A1 /* ProductCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B5CC72AFDC54500A936A1 /* ProductCollectionView.swift */; };
+		904B5CCA2AFDC54500A936A1 /* ProductCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904B5CC82AFDC54500A936A1 /* ProductCollectionView.xib */; };
+		904B5CD02AFDC65600A936A1 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B5CCE2AFDC65600A936A1 /* HeaderCell.swift */; };
+		904B5CD12AFDC65600A936A1 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904B5CCF2AFDC65600A936A1 /* HeaderCell.xib */; };
+		904B5CD42AFDC76200A936A1 /* ContentProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B5CD22AFDC76200A936A1 /* ContentProductCell.swift */; };
+		904B5CD52AFDC76200A936A1 /* ContentProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904B5CD32AFDC76200A936A1 /* ContentProductCell.xib */; };
+		90505CB12AFC29A300925A98 /* InputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CB02AFC29A300925A98 /* InputFieldCell.swift */; };
+		90505CB32AFC29C200925A98 /* InputFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CB22AFC29C200925A98 /* InputFieldCellViewModel.swift */; };
+		90505CB62AFC2A4700925A98 /* SpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CB52AFC2A4700925A98 /* SpaceCell.swift */; };
+		90505CB92AFC2A9900925A98 /* SpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CB82AFC2A9900925A98 /* SpaceView.swift */; };
+		90505CBB2AFC2D8F00925A98 /* textField+addDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CBA2AFC2D8F00925A98 /* textField+addDone.swift */; };
+		90505CBD2AFC2DFA00925A98 /* UIStackView+removeAllArrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CBC2AFC2DFA00925A98 /* UIStackView+removeAllArrange.swift */; };
+		90505CBF2AFC2E1800925A98 /* UIView+constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CBE2AFC2E1800925A98 /* UIView+constraint.swift */; };
+		90505CC62AFC34D800925A98 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CC42AFC34D800925A98 /* CustomButton.swift */; };
+		90505CC72AFC34D800925A98 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90505CC52AFC34D800925A98 /* CustomButton.xib */; };
+		90505CCA2AFC363A00925A98 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CC92AFC363A00925A98 /* ButtonCell.swift */; };
+		90505CCF2AFC381100925A98 /* RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CCE2AFC381100925A98 /* RegisterCell.swift */; };
+		90505CD32AFC387900925A98 /* CtaLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CD12AFC387900925A98 /* CtaLabelView.swift */; };
+		90505CD42AFC387900925A98 /* CtaLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90505CD22AFC387900925A98 /* CtaLabelView.xib */; };
+		90505CD72AFC609F00925A98 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CD62AFC609F00925A98 /* FooterCell.swift */; };
+		90505CDB2AFC60D000925A98 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CD92AFC60D000925A98 /* FooterView.swift */; };
+		90505CDC2AFC60D000925A98 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90505CDA2AFC60D000925A98 /* FooterView.xib */; };
+		90505CE02AFC642200925A98 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CDF2AFC642200925A98 /* RegisterViewModel.swift */; };
+		90505CE52AFC669D00925A98 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CE32AFC669D00925A98 /* HomepageViewController.swift */; };
+		90505CE62AFC669D00925A98 /* HomepageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90505CE42AFC669D00925A98 /* HomepageViewController.xib */; };
+		90505CEA2AFC684300925A98 /* InfoHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CE82AFC684300925A98 /* InfoHealthView.swift */; };
+		90505CEB2AFC684300925A98 /* InfoHealthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90505CE92AFC684300925A98 /* InfoHealthView.xib */; };
+		90505CEF2AFC70C200925A98 /* SpecificServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90505CED2AFC70C200925A98 /* SpecificServiceView.swift */; };
+		90505CF02AFC70C200925A98 /* SpecificServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90505CEE2AFC70C200925A98 /* SpecificServiceView.xib */; };
+		906233DD2AFDBD51006024EF /* TrackServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906233DC2AFDBD51006024EF /* TrackServiceView.swift */; };
+		906233DF2AFDBD95006024EF /* TrackServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906233DE2AFDBD95006024EF /* TrackServiceView.xib */; };
+		906233E22AFDC0CC006024EF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906233E12AFDC0CC006024EF /* SearchBar.swift */; };
+		906233E42AFDC0D8006024EF /* SearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906233E32AFDC0D8006024EF /* SearchBar.xib */; };
+		9067DF0F2AFDF28C003F713D /* CustomSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067DF0D2AFDF28C003F713D /* CustomSegmentedView.swift */; };
+		9067DF102AFDF28C003F713D /* CustomSegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9067DF0E2AFDF28C003F713D /* CustomSegmentedView.xib */; };
+		9067DF142AFDFBDB003F713D /* HealthServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067DF122AFDFBDB003F713D /* HealthServiceView.swift */; };
+		9067DF152AFDFBDB003F713D /* HealthServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9067DF132AFDFBDB003F713D /* HealthServiceView.xib */; };
+		90EC3DFC2AFE2FFC00800737 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EC3DFA2AFE2FFC00800737 /* SidebarViewController.swift */; };
+		90EC3DFD2AFE2FFC00800737 /* SidebarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90EC3DFB2AFE2FFC00800737 /* SidebarViewController.xib */; };
+		90F3BD642AFE461A00E7B6D9 /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BD632AFE461A00E7B6D9 /* UserApiService.swift */; };
+		90F3BD662AFE462900E7B6D9 /* UserApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BD652AFE462900E7B6D9 /* UserApiRouter.swift */; };
+		90F3BD6B2AFE468D00E7B6D9 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BD6A2AFE468D00E7B6D9 /* NetworkServices.swift */; };
+		90F3BD6D2AFE46A200E7B6D9 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BD6C2AFE46A200E7B6D9 /* ErrorResponse.swift */; };
+		90F3BD702AFE46DB00E7B6D9 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BD6F2AFE46DB00E7B6D9 /* LoginResponse.swift */; };
+		90F3BD722AFE4B0800E7B6D9 /* UIViewController+sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BD712AFE4B0800E7B6D9 /* UIViewController+sheet.swift */; };
+		90F3BD762AFE4D2500E7B6D9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BD742AFE4D2500E7B6D9 /* SettingsViewController.swift */; };
+		90F3BD772AFE4D2500E7B6D9 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3BD752AFE4D2500E7B6D9 /* SettingsViewController.xib */; };
+		90F3BD792AFE4DC800E7B6D9 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BD782AFE4DC800E7B6D9 /* UserDefault.swift */; };
+		A10F13665AD668BE0D2671D9 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD2EFD101ACA4C00D0218 /* UIView+extension.swift */; };
+		A3E613601D002C055C8F214E /* Proxima Nova Alt Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DA759194A3CC7B7325DD554 /* Proxima Nova Alt Bold.otf */; };
+		A492B426EA8EC0B314E8B0CB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE344EE04DF10CCA405C90 /* CustomTextField.swift */; };
+		A8EA13248D83C0F4E5EFD714 /* Proxima Nova Alt Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7762B50A5E3C2494D7ED516D /* Proxima Nova Alt Thin.otf */; };
+		AACFFDD7079F27198A82D3CD /* Proxima Nova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5408C4114AE4B333AE1DA3B8 /* Proxima Nova Regular.otf */; };
+		AC7123153BECDB5E6F2A7C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EF40D63EDAB4EC58696E2D /* LaunchScreen.storyboard */; };
+		C18CA79F42A4E6F3CB29801C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C6ED79CCBD0F25AE186ABA /* Colors.xcassets */; };
+		C3FDB9504040129435A7B199 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19C53291D3A06FF15E1C085E /* Gilroy-Light.otf */; };
+		CCA057C83E93137B6A2C3A7A /* UIView+shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2585BFE7F1FE9EEADA3F3 /* UIView+shadow.swift */; };
+		D293940AF9F7118A98947B82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0FDE4E392994EF64AE978F /* AppDelegate.swift */; };
+		D3F3ADD7788BD4D7DA4D1FFE /* Pods_MedicalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BC33B9D486E8B1618F566A /* Pods_MedicalApp.framework */; };
+		D90E027A30A7D6AE4CA0095B /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D806FC2C1F84A68EAA9D097A /* Gilroy-ExtraBold.otf */; };
+		DABE9B7FEA536CEA36A855E3 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238E1C578C06B9A8DD0C5C8 /* FormViewModel.swift */; };
+		DAF4AD16F89CEA823B533890 /* CellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED7692552D6B2EB8A092DF /* CellInterface.swift */; };
+		DB26BE2700388CEB7987D244 /* Cell+deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8534A7C3289AF584A684431 /* Cell+deque.swift */; };
+		E41278D3AEA68BF16E532A89 /* Proxima Nova Alt Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B134B4AFD499FE61B0B2 /* Proxima Nova Alt Light.otf */; };
+		EC092FA0963F7AF21B731BCA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3218BB60BD7E2217E098D83 /* WelcomeView.swift */; };
+		EE33A507DA90B8A6F6BAC476 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E75E19E028EB047F9C247 /* FormViewController.swift */; };
+		F0F75229BA977C888A8B51FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099662F58CF101BCAE421987 /* Assets.xcassets */; };
+		F4EB29E62A3EE4897089423A /* UIView+loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93955585C7B743ACEC4E5F /* UIView+loading.swift */; };
+		F66D30704ECED1A947509F64 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A52A04CB51C6793977427 /* String+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		907519D72AFC05DF00203800 /* MedicalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		907519DA2AFC05DF00203800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		907519DC2AFC05DF00203800 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		907519DE2AFC05DF00203800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		907519E12AFC05DF00203800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		907519E32AFC05E100203800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		907519E62AFC05E100203800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		907519E82AFC05E100203800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B212E297DF35F71E9FEE05 /* MedicalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EDD2EFD101ACA4C00D0218 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		099662F58CF101BCAE421987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DA759194A3CC7B7325DD554 /* Proxima Nova Alt Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Bold.otf"; sourceTree = "<group>"; };
+		0E2A52A04CB51C6793977427 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		11CE6C596AC2D830C3B8EFF5 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		19C53291D3A06FF15E1C085E /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
+		220474EF6ACF57AD0F19085D /* MedicalAppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalAppUtilities.swift; sourceTree = "<group>"; };
+		22A65B2D9C637A30F7878044 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		24E9A95F4269DB8EA9530DA0 /* Proxima Nova Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Extrabold.otf"; sourceTree = "<group>"; };
+		34BE344EE04DF10CCA405C90 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3A0FDE4E392994EF64AE978F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49C6ED79CCBD0F25AE186ABA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4B93955585C7B743ACEC4E5F /* UIView+loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+loading.swift"; sourceTree = "<group>"; };
+		5408C4114AE4B333AE1DA3B8 /* Proxima Nova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Regular.otf"; sourceTree = "<group>"; };
+		60FE9193DAE757F929630271 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		69BC33B9D486E8B1618F566A /* Pods_MedicalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAD307EB1B632082B0CF6C4 /* UIApplication+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+extension.swift"; sourceTree = "<group>"; };
+		6DD8B122D691330CAE7D72AC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6E47EC8FFDAFE3645F26561F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7762B50A5E3C2494D7ED516D /* Proxima Nova Alt Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Thin.otf"; sourceTree = "<group>"; };
+		846E75E19E028EB047F9C247 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		88D9B134B4AFD499FE61B0B2 /* Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
+		904B5CC72AFDC54500A936A1 /* ProductCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionView.swift; sourceTree = "<group>"; };
+		904B5CC82AFDC54500A936A1 /* ProductCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionView.xib; sourceTree = "<group>"; };
+		904B5CCE2AFDC65600A936A1 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		904B5CCF2AFDC65600A936A1 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		904B5CD22AFDC76200A936A1 /* ContentProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentProductCell.swift; sourceTree = "<group>"; };
+		904B5CD32AFDC76200A936A1 /* ContentProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentProductCell.xib; sourceTree = "<group>"; };
+		90505CB02AFC29A300925A98 /* InputFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldCell.swift; sourceTree = "<group>"; };
+		90505CB22AFC29C200925A98 /* InputFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldCellViewModel.swift; sourceTree = "<group>"; };
+		90505CB52AFC2A4700925A98 /* SpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCell.swift; sourceTree = "<group>"; };
+		90505CB82AFC2A9900925A98 /* SpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceView.swift; sourceTree = "<group>"; };
+		90505CBA2AFC2D8F00925A98 /* textField+addDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "textField+addDone.swift"; sourceTree = "<group>"; };
+		90505CBC2AFC2DFA00925A98 /* UIStackView+removeAllArrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+removeAllArrange.swift"; sourceTree = "<group>"; };
+		90505CBE2AFC2E1800925A98 /* UIView+constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+constraint.swift"; sourceTree = "<group>"; };
+		90505CC42AFC34D800925A98 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		90505CC52AFC34D800925A98 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		90505CC92AFC363A00925A98 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		90505CCE2AFC381100925A98 /* RegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCell.swift; sourceTree = "<group>"; };
+		90505CD12AFC387900925A98 /* CtaLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CtaLabelView.swift; sourceTree = "<group>"; };
+		90505CD22AFC387900925A98 /* CtaLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CtaLabelView.xib; sourceTree = "<group>"; };
+		90505CD62AFC609F00925A98 /* FooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
+		90505CD92AFC60D000925A98 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		90505CDA2AFC60D000925A98 /* FooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
+		90505CDF2AFC642200925A98 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		90505CE32AFC669D00925A98 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		90505CE42AFC669D00925A98 /* HomepageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomepageViewController.xib; sourceTree = "<group>"; };
+		90505CE82AFC684300925A98 /* InfoHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHealthView.swift; sourceTree = "<group>"; };
+		90505CE92AFC684300925A98 /* InfoHealthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoHealthView.xib; sourceTree = "<group>"; };
+		90505CED2AFC70C200925A98 /* SpecificServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificServiceView.swift; sourceTree = "<group>"; };
+		90505CEE2AFC70C200925A98 /* SpecificServiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecificServiceView.xib; sourceTree = "<group>"; };
+		906233DC2AFDBD51006024EF /* TrackServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceView.swift; sourceTree = "<group>"; };
+		906233DE2AFDBD95006024EF /* TrackServiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackServiceView.xib; sourceTree = "<group>"; };
+		906233E12AFDC0CC006024EF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		906233E32AFDC0D8006024EF /* SearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBar.xib; sourceTree = "<group>"; };
+		9067DF0D2AFDF28C003F713D /* CustomSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedView.swift; sourceTree = "<group>"; };
+		9067DF0E2AFDF28C003F713D /* CustomSegmentedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSegmentedView.xib; sourceTree = "<group>"; };
+		9067DF122AFDFBDB003F713D /* HealthServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServiceView.swift; sourceTree = "<group>"; };
+		9067DF132AFDFBDB003F713D /* HealthServiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthServiceView.xib; sourceTree = "<group>"; };
+		90EC3DFA2AFE2FFC00800737 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		90EC3DFB2AFE2FFC00800737 /* SidebarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidebarViewController.xib; sourceTree = "<group>"; };
+		90F3BD632AFE461A00E7B6D9 /* UserApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
+		90F3BD652AFE462900E7B6D9 /* UserApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiRouter.swift; sourceTree = "<group>"; };
+		90F3BD6A2AFE468D00E7B6D9 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		90F3BD6C2AFE46A200E7B6D9 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		90F3BD6F2AFE46DB00E7B6D9 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		90F3BD712AFE4B0800E7B6D9 /* UIViewController+sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+sheet.swift"; sourceTree = "<group>"; };
+		90F3BD742AFE4D2500E7B6D9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		90F3BD752AFE4D2500E7B6D9 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		90F3BD782AFE4DC800E7B6D9 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		9D59C4361FEBE529CEE4DFD3 /* NSObject+className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+className.swift"; sourceTree = "<group>"; };
+		9DED7692552D6B2EB8A092DF /* CellInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInterface.swift; sourceTree = "<group>"; };
+		A3E2585BFE7F1FE9EEADA3F3 /* UIView+shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shadow.swift"; sourceTree = "<group>"; };
+		BC01ACB15F24C03472357BFC /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		C7D19AE163BF67E3CF915BCE /* Pods-MedicalApp.medicalapp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalApp.medicalapp.xcconfig"; path = "Target Support Files/Pods-MedicalApp/Pods-MedicalApp.medicalapp.xcconfig"; sourceTree = "<group>"; };
+		C974BE86685C362885DDE663 /* Proxima Nova Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Black.otf"; sourceTree = "<group>"; };
+		CA167BDE1E0653F0E2AD6294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D238E1C578C06B9A8DD0C5C8 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		D806FC2C1F84A68EAA9D097A /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		D9885D0F3725465AC5F7DC1B /* UIView+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+cornerRadius.swift"; sourceTree = "<group>"; };
+		DB4C58C6AD98E2C0D75A3390 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		DDF00E7E70C9E7F285289CA5 /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
+		E3218BB60BD7E2217E098D83 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		E69CEEEB6CDFFC005A46D42B /* WelcomeHeaderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderCellViewModel.swift; sourceTree = "<group>"; };
+		E7EB97E4E5C425BE7411BA8A /* MedicalApp.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MedicalApp.xcconfig; sourceTree = "<group>"; };
+		E8534A7C3289AF584A684431 /* Cell+deque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+deque.swift"; sourceTree = "<group>"; };
+		ED8A09B632D77006F379F8B0 /* WelcomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		907519D42AFC05DF00203800 /* Frameworks */ = {
+		30521219F9CD49C6248F34D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F3ADD7788BD4D7DA4D1FFE /* Pods_MedicalApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		907519CE2AFC05DF00203800 = {
+		0932689FD2064639E2C175CB /* MedicalApp */ = {
 			isa = PBXGroup;
 			children = (
-				907519D92AFC05DF00203800 /* MedicalApp */,
-				907519D82AFC05DF00203800 /* Products */,
+				90F3BD682AFE467A00E7B6D9 /* Core */,
+				57A19D470234ABA2EABAAE26 /* Components */,
+				CC1623695F65810AB2161997 /* Extension */,
+				15ED970DE03EF05668BB11AB /* Feature */,
+				D143541B9C3A89C20C3A7583 /* Main */,
+				5B56380BE116C2FEE2E71D40 /* Resources */,
+				2CA71DEF77ACEF01B407628B /* Utilities */,
 			);
+			path = MedicalApp;
 			sourceTree = "<group>";
 		};
-		907519D82AFC05DF00203800 /* Products */ = {
+		15ED970DE03EF05668BB11AB /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				907519D72AFC05DF00203800 /* MedicalApp.app */,
+				90F3BD732AFE4D1700E7B6D9 /* Settings */,
+				90EC3DF82AFE2FDB00800737 /* Sidebar */,
+				90505CE12AFC667E00925A98 /* Home */,
+				FE641B503264D51BA5964D81 /* User */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		1F6F6D08137EDE04A5D6F334 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9DED7692552D6B2EB8A092DF /* CellInterface.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		234E2BBD39A244DCE9AC45CB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BAD81B8DFA4878B6FDDF9626 /* View Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		26183D1F6A45BB27B6EB9843 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7D19AE163BF67E3CF915BCE /* Pods-MedicalApp.medicalapp.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2CA71DEF77ACEF01B407628B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				220474EF6ACF57AD0F19085D /* MedicalAppUtilities.swift */,
+				90F3BD782AFE4DC800E7B6D9 /* UserDefault.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		469F5A111D2D533EEDCEA2BA /* Welcome View */ = {
+			isa = PBXGroup;
+			children = (
+				E3218BB60BD7E2217E098D83 /* WelcomeView.swift */,
+			);
+			path = "Welcome View";
+			sourceTree = "<group>";
+		};
+		480D840F3D7FC882B4D6958E /* Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				34BE344EE04DF10CCA405C90 /* CustomTextField.swift */,
+			);
+			path = "Text Field";
+			sourceTree = "<group>";
+		};
+		57A19D470234ABA2EABAAE26 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9067DF112AFDFBAF003F713D /* HealthServiceView */,
+				9067DF0C2AFDF26B003F713D /* SegmentedControl */,
+				904B5CC62AFDC50900A936A1 /* ProductCollection */,
+				906233E02AFDC0AE006024EF /* Search Bar */,
+				906233DB2AFDBD07006024EF /* Track Service View */,
+				90505CEC2AFC709400925A98 /* Specific Service View */,
+				90505CE72AFC683000925A98 /* Info Health View */,
+				90505CD82AFC60A600925A98 /* FooterView */,
+				90505CD02AFC385A00925A98 /* CtaLabel */,
+				90505CC32AFC34C000925A98 /* CustomButton */,
+				90505CB72AFC2A8E00925A98 /* Space View */,
+				480D840F3D7FC882B4D6958E /* Text Field */,
+				469F5A111D2D533EEDCEA2BA /* Welcome View */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B56380BE116C2FEE2E71D40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7DB811B1ED64C2179F0E3C2F /* Colors */,
+				EA8B75711C87FF885E0A6C9D /* Fonts */,
+				79C8EA8D403E0B77447278A2 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		767D281515023FEEB8ED43AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				846E75E19E028EB047F9C247 /* FormViewController.swift */,
+				DDF00E7E70C9E7F285289CA5 /* FormViewController.xib */,
+				B74D573F03C99334E79209C5 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79C8EA8D403E0B77447278A2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				099662F58CF101BCAE421987 /* Assets.xcassets */,
+				22A65B2D9C637A30F7878044 /* Image.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7DB811B1ED64C2179F0E3C2F /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				6DD8B122D691330CAE7D72AC /* Colors.swift */,
+				49C6ED79CCBD0F25AE186ABA /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		8B479092756CC369EBAF9545 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B212E297DF35F71E9FEE05 /* MedicalApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		907519D92AFC05DF00203800 /* MedicalApp */ = {
+		904B5CC62AFDC50900A936A1 /* ProductCollection */ = {
 			isa = PBXGroup;
 			children = (
-				907519DA2AFC05DF00203800 /* AppDelegate.swift */,
-				907519DC2AFC05DF00203800 /* SceneDelegate.swift */,
-				907519DE2AFC05DF00203800 /* ViewController.swift */,
-				907519E02AFC05DF00203800 /* Main.storyboard */,
-				907519E32AFC05E100203800 /* Assets.xcassets */,
-				907519E52AFC05E100203800 /* LaunchScreen.storyboard */,
-				907519E82AFC05E100203800 /* Info.plist */,
+				904B5CCB2AFDC62D00A936A1 /* Cell */,
+				904B5CC72AFDC54500A936A1 /* ProductCollectionView.swift */,
+				904B5CC82AFDC54500A936A1 /* ProductCollectionView.xib */,
 			);
-			path = MedicalApp;
+			path = ProductCollection;
+			sourceTree = "<group>";
+		};
+		904B5CCB2AFDC62D00A936A1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				904B5CCD2AFDC63C00A936A1 /* Content */,
+				904B5CCC2AFDC63800A936A1 /* Header */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		904B5CCC2AFDC63800A936A1 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				904B5CCE2AFDC65600A936A1 /* HeaderCell.swift */,
+				904B5CCF2AFDC65600A936A1 /* HeaderCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		904B5CCD2AFDC63C00A936A1 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				904B5CD22AFDC76200A936A1 /* ContentProductCell.swift */,
+				904B5CD32AFDC76200A936A1 /* ContentProductCell.xib */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		90505CAF2AFC295200925A98 /* Input Field */ = {
+			isa = PBXGroup;
+			children = (
+				90505CB02AFC29A300925A98 /* InputFieldCell.swift */,
+				90505CB22AFC29C200925A98 /* InputFieldCellViewModel.swift */,
+			);
+			path = "Input Field";
+			sourceTree = "<group>";
+		};
+		90505CB42AFC2A3F00925A98 /* Space */ = {
+			isa = PBXGroup;
+			children = (
+				90505CB52AFC2A4700925A98 /* SpaceCell.swift */,
+			);
+			path = Space;
+			sourceTree = "<group>";
+		};
+		90505CB72AFC2A8E00925A98 /* Space View */ = {
+			isa = PBXGroup;
+			children = (
+				90505CB82AFC2A9900925A98 /* SpaceView.swift */,
+			);
+			path = "Space View";
+			sourceTree = "<group>";
+		};
+		90505CC22AFC349D00925A98 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				90505CC92AFC363A00925A98 /* ButtonCell.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		90505CC32AFC34C000925A98 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				90505CC42AFC34D800925A98 /* CustomButton.swift */,
+				90505CC52AFC34D800925A98 /* CustomButton.xib */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		90505CCD2AFC380100925A98 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				90505CCE2AFC381100925A98 /* RegisterCell.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		90505CD02AFC385A00925A98 /* CtaLabel */ = {
+			isa = PBXGroup;
+			children = (
+				90505CD12AFC387900925A98 /* CtaLabelView.swift */,
+				90505CD22AFC387900925A98 /* CtaLabelView.xib */,
+			);
+			path = CtaLabel;
+			sourceTree = "<group>";
+		};
+		90505CD52AFC605D00925A98 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				90505CD62AFC609F00925A98 /* FooterCell.swift */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		90505CD82AFC60A600925A98 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				90505CD92AFC60D000925A98 /* FooterView.swift */,
+				90505CDA2AFC60D000925A98 /* FooterView.xib */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
+		90505CDD2AFC640F00925A98 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				90505CDE2AFC641400925A98 /* View Model */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		90505CDE2AFC641400925A98 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				90505CDF2AFC642200925A98 /* RegisterViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		90505CE12AFC667E00925A98 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				90505CE22AFC668700925A98 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		90505CE22AFC668700925A98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90505CE32AFC669D00925A98 /* HomepageViewController.swift */,
+				90505CE42AFC669D00925A98 /* HomepageViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90505CE72AFC683000925A98 /* Info Health View */ = {
+			isa = PBXGroup;
+			children = (
+				90505CE82AFC684300925A98 /* InfoHealthView.swift */,
+				90505CE92AFC684300925A98 /* InfoHealthView.xib */,
+			);
+			path = "Info Health View";
+			sourceTree = "<group>";
+		};
+		90505CEC2AFC709400925A98 /* Specific Service View */ = {
+			isa = PBXGroup;
+			children = (
+				90505CED2AFC70C200925A98 /* SpecificServiceView.swift */,
+				90505CEE2AFC70C200925A98 /* SpecificServiceView.xib */,
+			);
+			path = "Specific Service View";
+			sourceTree = "<group>";
+		};
+		906233DB2AFDBD07006024EF /* Track Service View */ = {
+			isa = PBXGroup;
+			children = (
+				906233DC2AFDBD51006024EF /* TrackServiceView.swift */,
+				906233DE2AFDBD95006024EF /* TrackServiceView.xib */,
+			);
+			path = "Track Service View";
+			sourceTree = "<group>";
+		};
+		906233E02AFDC0AE006024EF /* Search Bar */ = {
+			isa = PBXGroup;
+			children = (
+				906233E12AFDC0CC006024EF /* SearchBar.swift */,
+				906233E32AFDC0D8006024EF /* SearchBar.xib */,
+			);
+			path = "Search Bar";
+			sourceTree = "<group>";
+		};
+		9067DF0C2AFDF26B003F713D /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				9067DF0D2AFDF28C003F713D /* CustomSegmentedView.swift */,
+				9067DF0E2AFDF28C003F713D /* CustomSegmentedView.xib */,
+			);
+			path = SegmentedControl;
+			sourceTree = "<group>";
+		};
+		9067DF112AFDFBAF003F713D /* HealthServiceView */ = {
+			isa = PBXGroup;
+			children = (
+				9067DF122AFDFBDB003F713D /* HealthServiceView.swift */,
+				9067DF132AFDFBDB003F713D /* HealthServiceView.xib */,
+			);
+			path = HealthServiceView;
+			sourceTree = "<group>";
+		};
+		90EC3DF82AFE2FDB00800737 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				90EC3DF92AFE2FE000800737 /* View */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		90EC3DF92AFE2FE000800737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90EC3DFA2AFE2FFC00800737 /* SidebarViewController.swift */,
+				90EC3DFB2AFE2FFC00800737 /* SidebarViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90F3BD622AFE45EE00E7B6D9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BD6E2AFE46CF00E7B6D9 /* Response */,
+				90F3BD632AFE461A00E7B6D9 /* UserApiService.swift */,
+				90F3BD652AFE462900E7B6D9 /* UserApiRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		90F3BD682AFE467A00E7B6D9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BD692AFE467D00E7B6D9 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		90F3BD692AFE467D00E7B6D9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BD6A2AFE468D00E7B6D9 /* NetworkServices.swift */,
+				90F3BD6C2AFE46A200E7B6D9 /* ErrorResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		90F3BD6E2AFE46CF00E7B6D9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BD6F2AFE46DB00E7B6D9 /* LoginResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		90F3BD732AFE4D1700E7B6D9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BD742AFE4D2500E7B6D9 /* SettingsViewController.swift */,
+				90F3BD752AFE4D2500E7B6D9 /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B61533D123C4598DCEBAD4DB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E7EB97E4E5C425BE7411BA8A /* MedicalApp.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B73BF81A7C6319A3E657D8CA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				D238E1C578C06B9A8DD0C5C8 /* FormViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		B74D573F03C99334E79209C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				90505CD52AFC605D00925A98 /* Footer */,
+				90505CCD2AFC380100925A98 /* Register */,
+				90505CC22AFC349D00925A98 /* Button */,
+				90505CB42AFC2A3F00925A98 /* Space */,
+				90505CAF2AFC295200925A98 /* Input Field */,
+				1F6F6D08137EDE04A5D6F334 /* Protocol */,
+				CA6E6352AAEE6B803447651B /* Welcome Header */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BAD81B8DFA4878B6FDDF9626 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				60FE9193DAE757F929630271 /* LoginViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		CA6E6352AAEE6B803447651B /* Welcome Header */ = {
+			isa = PBXGroup;
+			children = (
+				ED8A09B632D77006F379F8B0 /* WelcomeHeaderCell.swift */,
+				E69CEEEB6CDFFC005A46D42B /* WelcomeHeaderCellViewModel.swift */,
+			);
+			path = "Welcome Header";
+			sourceTree = "<group>";
+		};
+		CC1623695F65810AB2161997 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8534A7C3289AF584A684431 /* Cell+deque.swift */,
+				90F3BD712AFE4B0800E7B6D9 /* UIViewController+sheet.swift */,
+				9D59C4361FEBE529CEE4DFD3 /* NSObject+className.swift */,
+				0E2A52A04CB51C6793977427 /* String+extension.swift */,
+				6BAD307EB1B632082B0CF6C4 /* UIApplication+extension.swift */,
+				D9885D0F3725465AC5F7DC1B /* UIView+cornerRadius.swift */,
+				02EDD2EFD101ACA4C00D0218 /* UIView+extension.swift */,
+				4B93955585C7B743ACEC4E5F /* UIView+loading.swift */,
+				A3E2585BFE7F1FE9EEADA3F3 /* UIView+shadow.swift */,
+				90505CBA2AFC2D8F00925A98 /* textField+addDone.swift */,
+				90505CBC2AFC2DFA00925A98 /* UIStackView+removeAllArrange.swift */,
+				90505CBE2AFC2E1800925A98 /* UIView+constraint.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D143541B9C3A89C20C3A7583 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3A0FDE4E392994EF64AE978F /* AppDelegate.swift */,
+				6E47EC8FFDAFE3645F26561F /* Info.plist */,
+				82EF40D63EDAB4EC58696E2D /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D27EC1C2F462FF65A3741B8C = {
+			isa = PBXGroup;
+			children = (
+				B61533D123C4598DCEBAD4DB /* Config */,
+				0932689FD2064639E2C175CB /* MedicalApp */,
+				8B479092756CC369EBAF9545 /* Products */,
+				26183D1F6A45BB27B6EB9843 /* Pods */,
+				F472BE949DAB07AA63B35F4A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA8B75711C87FF885E0A6C9D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DB4C58C6AD98E2C0D75A3390 /* Fonts.swift */,
+				D806FC2C1F84A68EAA9D097A /* Gilroy-ExtraBold.otf */,
+				19C53291D3A06FF15E1C085E /* Gilroy-Light.otf */,
+				0DA759194A3CC7B7325DD554 /* Proxima Nova Alt Bold.otf */,
+				88D9B134B4AFD499FE61B0B2 /* Proxima Nova Alt Light.otf */,
+				7762B50A5E3C2494D7ED516D /* Proxima Nova Alt Thin.otf */,
+				C974BE86685C362885DDE663 /* Proxima Nova Black.otf */,
+				11CE6C596AC2D830C3B8EFF5 /* Proxima Nova Bold.otf */,
+				24E9A95F4269DB8EA9530DA0 /* Proxima Nova Extrabold.otf */,
+				5408C4114AE4B333AE1DA3B8 /* Proxima Nova Regular.otf */,
+				BC01ACB15F24C03472357BFC /* Proxima Nova Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F472BE949DAB07AA63B35F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69BC33B9D486E8B1618F566A /* Pods_MedicalApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBB88B0A1A79DCA25B0E4A2E /* Form View */ = {
+			isa = PBXGroup;
+			children = (
+				767D281515023FEEB8ED43AA /* View */,
+				B73BF81A7C6319A3E657D8CA /* View Model */,
+			);
+			path = "Form View";
+			sourceTree = "<group>";
+		};
+		FE641B503264D51BA5964D81 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BD622AFE45EE00E7B6D9 /* Network */,
+				90505CDD2AFC640F00925A98 /* Register */,
+				FBB88B0A1A79DCA25B0E4A2E /* Form View */,
+				234E2BBD39A244DCE9AC45CB /* Login */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		907519D62AFC05DF00203800 /* MedicalApp */ = {
+		BD7635DEE7F2429B31731DCF /* MedicalApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 907519EB2AFC05E100203800 /* Build configuration list for PBXNativeTarget "MedicalApp" */;
+			buildConfigurationList = E20A06D197B46A05F4214350 /* Build configuration list for PBXNativeTarget "MedicalApp" */;
 			buildPhases = (
-				907519D32AFC05DF00203800 /* Sources */,
-				907519D42AFC05DF00203800 /* Frameworks */,
-				907519D52AFC05DF00203800 /* Resources */,
+				6F47B276B05C38683A1E98EC /* [CP] Check Pods Manifest.lock */,
+				91E6D0AA1A6467C5C0F2B585 /* Sources */,
+				D05FB33AFBF5A7D2C21AE8DE /* Resources */,
+				95FCC2F4D5ECEF541D2C5FE0 /* SwiftGen */,
+				30521219F9CD49C6248F34D6 /* Frameworks */,
+				FCD5D747673A6151167FB3F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,81 +750,205 @@
 			);
 			name = MedicalApp;
 			productName = MedicalApp;
-			productReference = 907519D72AFC05DF00203800 /* MedicalApp.app */;
+			productReference = 01B212E297DF35F71E9FEE05 /* MedicalApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		907519CF2AFC05DF00203800 /* Project object */ = {
+		D84A0B501303A42A2A212391 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
-				TargetAttributes = {
-					907519D62AFC05DF00203800 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-				};
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = 907519D22AFC05DF00203800 /* Build configuration list for PBXProject "MedicalApp" */;
+			buildConfigurationList = F5CA4CE42D05DBE951D7D66F /* Build configuration list for PBXProject "MedicalApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 907519CE2AFC05DF00203800;
-			productRefGroup = 907519D82AFC05DF00203800 /* Products */;
+			mainGroup = D27EC1C2F462FF65A3741B8C;
+			productRefGroup = 8B479092756CC369EBAF9545 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				907519D62AFC05DF00203800 /* MedicalApp */,
+				BD7635DEE7F2429B31731DCF /* MedicalApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		907519D52AFC05DF00203800 /* Resources */ = {
+		D05FB33AFBF5A7D2C21AE8DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				907519E72AFC05E100203800 /* LaunchScreen.storyboard in Resources */,
-				907519E42AFC05E100203800 /* Assets.xcassets in Resources */,
-				907519E22AFC05DF00203800 /* Main.storyboard in Resources */,
+				904B5CD52AFDC76200A936A1 /* ContentProductCell.xib in Resources */,
+				F0F75229BA977C888A8B51FB /* Assets.xcassets in Resources */,
+				9067DF152AFDFBDB003F713D /* HealthServiceView.xib in Resources */,
+				C18CA79F42A4E6F3CB29801C /* Colors.xcassets in Resources */,
+				90505CEB2AFC684300925A98 /* InfoHealthView.xib in Resources */,
+				444F7AB7AAEAA9C8FA68EFF7 /* FormViewController.xib in Resources */,
+				D90E027A30A7D6AE4CA0095B /* Gilroy-ExtraBold.otf in Resources */,
+				90505CD42AFC387900925A98 /* CtaLabelView.xib in Resources */,
+				90505CF02AFC70C200925A98 /* SpecificServiceView.xib in Resources */,
+				C3FDB9504040129435A7B199 /* Gilroy-Light.otf in Resources */,
+				904B5CCA2AFDC54500A936A1 /* ProductCollectionView.xib in Resources */,
+				AC7123153BECDB5E6F2A7C6E /* LaunchScreen.storyboard in Resources */,
+				A3E613601D002C055C8F214E /* Proxima Nova Alt Bold.otf in Resources */,
+				9067DF102AFDF28C003F713D /* CustomSegmentedView.xib in Resources */,
+				E41278D3AEA68BF16E532A89 /* Proxima Nova Alt Light.otf in Resources */,
+				90EC3DFD2AFE2FFC00800737 /* SidebarViewController.xib in Resources */,
+				A8EA13248D83C0F4E5EFD714 /* Proxima Nova Alt Thin.otf in Resources */,
+				90505CE62AFC669D00925A98 /* HomepageViewController.xib in Resources */,
+				274B6A904567F1BFF660E849 /* Proxima Nova Black.otf in Resources */,
+				906233DF2AFDBD95006024EF /* TrackServiceView.xib in Resources */,
+				904B5CD12AFDC65600A936A1 /* HeaderCell.xib in Resources */,
+				19E49C0A3F83D7BF4AD49DCF /* Proxima Nova Bold.otf in Resources */,
+				3E54E67B2B17F6AFFFF49044 /* Proxima Nova Extrabold.otf in Resources */,
+				AACFFDD7079F27198A82D3CD /* Proxima Nova Regular.otf in Resources */,
+				90505CC72AFC34D800925A98 /* CustomButton.xib in Resources */,
+				90505CDC2AFC60D000925A98 /* FooterView.xib in Resources */,
+				7B4120B01080C7A5D9A03754 /* Proxima Nova Thin.otf in Resources */,
+				906233E42AFDC0D8006024EF /* SearchBar.xib in Resources */,
+				90F3BD772AFE4D2500E7B6D9 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F47B276B05C38683A1E98EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicalApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95FCC2F4D5ECEF541D2C5FE0 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" config run --config swiftgen.yml\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		FCD5D747673A6151167FB3F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalApp/Pods-MedicalApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalApp/Pods-MedicalApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicalApp/Pods-MedicalApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		907519D32AFC05DF00203800 /* Sources */ = {
+		91E6D0AA1A6467C5C0F2B585 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				907519DF2AFC05DF00203800 /* ViewController.swift in Sources */,
-				907519DB2AFC05DF00203800 /* AppDelegate.swift in Sources */,
-				907519DD2AFC05DF00203800 /* SceneDelegate.swift in Sources */,
+				90505CD32AFC387900925A98 /* CtaLabelView.swift in Sources */,
+				D293940AF9F7118A98947B82 /* AppDelegate.swift in Sources */,
+				DB26BE2700388CEB7987D244 /* Cell+deque.swift in Sources */,
+				DAF4AD16F89CEA823B533890 /* CellInterface.swift in Sources */,
+				38E97842A592533F51D6CCCD /* Colors.swift in Sources */,
+				90F3BD6D2AFE46A200E7B6D9 /* ErrorResponse.swift in Sources */,
+				90505CC62AFC34D800925A98 /* CustomButton.swift in Sources */,
+				904B5CD42AFDC76200A936A1 /* ContentProductCell.swift in Sources */,
+				A492B426EA8EC0B314E8B0CB /* CustomTextField.swift in Sources */,
+				90F3BD662AFE462900E7B6D9 /* UserApiRouter.swift in Sources */,
+				56F476855D9799EB4AF38A05 /* Fonts.swift in Sources */,
+				90505CE52AFC669D00925A98 /* HomepageViewController.swift in Sources */,
+				90F3BD722AFE4B0800E7B6D9 /* UIViewController+sheet.swift in Sources */,
+				EE33A507DA90B8A6F6BAC476 /* FormViewController.swift in Sources */,
+				DABE9B7FEA536CEA36A855E3 /* FormViewModel.swift in Sources */,
+				80BD269373F3BAD7858A5631 /* Image.swift in Sources */,
+				06D55EEF5DE6B9F47C3AA97D /* LoginViewModel.swift in Sources */,
+				33681A8483530AD234FAC250 /* MedicalAppUtilities.swift in Sources */,
+				90505CD72AFC609F00925A98 /* FooterCell.swift in Sources */,
+				906233DD2AFDBD51006024EF /* TrackServiceView.swift in Sources */,
+				90505CBD2AFC2DFA00925A98 /* UIStackView+removeAllArrange.swift in Sources */,
+				6005BC25FE573C31D002DD53 /* NSObject+className.swift in Sources */,
+				90505CE02AFC642200925A98 /* RegisterViewModel.swift in Sources */,
+				F66D30704ECED1A947509F64 /* String+extension.swift in Sources */,
+				6CE708836B3B9B67BF6B3AA4 /* UIApplication+extension.swift in Sources */,
+				9067DF0F2AFDF28C003F713D /* CustomSegmentedView.swift in Sources */,
+				90505CBF2AFC2E1800925A98 /* UIView+constraint.swift in Sources */,
+				6242E31168BBD8BD3EBF4C3E /* UIView+cornerRadius.swift in Sources */,
+				90505CCF2AFC381100925A98 /* RegisterCell.swift in Sources */,
+				A10F13665AD668BE0D2671D9 /* UIView+extension.swift in Sources */,
+				90505CEF2AFC70C200925A98 /* SpecificServiceView.swift in Sources */,
+				90505CB32AFC29C200925A98 /* InputFieldCellViewModel.swift in Sources */,
+				90505CBB2AFC2D8F00925A98 /* textField+addDone.swift in Sources */,
+				90F3BD702AFE46DB00E7B6D9 /* LoginResponse.swift in Sources */,
+				9067DF142AFDFBDB003F713D /* HealthServiceView.swift in Sources */,
+				90F3BD6B2AFE468D00E7B6D9 /* NetworkServices.swift in Sources */,
+				F4EB29E62A3EE4897089423A /* UIView+loading.swift in Sources */,
+				90505CB12AFC29A300925A98 /* InputFieldCell.swift in Sources */,
+				90505CCA2AFC363A00925A98 /* ButtonCell.swift in Sources */,
+				CCA057C83E93137B6A2C3A7A /* UIView+shadow.swift in Sources */,
+				2D6620BB24CFA50DA9490D92 /* WelcomeHeaderCell.swift in Sources */,
+				90505CB92AFC2A9900925A98 /* SpaceView.swift in Sources */,
+				904B5CD02AFDC65600A936A1 /* HeaderCell.swift in Sources */,
+				90F3BD762AFE4D2500E7B6D9 /* SettingsViewController.swift in Sources */,
+				90505CEA2AFC684300925A98 /* InfoHealthView.swift in Sources */,
+				30E2E46B4788CEB9B8100BB9 /* WelcomeHeaderCellViewModel.swift in Sources */,
+				904B5CC92AFDC54500A936A1 /* ProductCollectionView.swift in Sources */,
+				90EC3DFC2AFE2FFC00800737 /* SidebarViewController.swift in Sources */,
+				90F3BD642AFE461A00E7B6D9 /* UserApiService.swift in Sources */,
+				90505CB62AFC2A4700925A98 /* SpaceCell.swift in Sources */,
+				90F3BD792AFE4DC800E7B6D9 /* UserDefault.swift in Sources */,
+				906233E22AFDC0CC006024EF /* SearchBar.swift in Sources */,
+				EC092FA0963F7AF21B731BCA /* WelcomeView.swift in Sources */,
+				90505CDB2AFC60D000925A98 /* FooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		907519E02AFC05DF00203800 /* Main.storyboard */ = {
+		82EF40D63EDAB4EC58696E2D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				907519E12AFC05DF00203800 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		907519E52AFC05E100203800 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				907519E62AFC05E100203800 /* Base */,
+				CA167BDE1E0653F0E2AD6294 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,14 +956,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		907519E92AFC05E100203800 /* Debug */ = {
+		C47CE37CC228AA7A47C75B78 /* MedicalApp */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7D19AE163BF67E3CF915BCE /* Pods-MedicalApp.medicalapp.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = XBNGPCQY3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedicalApp/Main/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			};
+			name = MedicalApp;
+		};
+		FE14E30B2019F0AC7DEE1917 /* MedicalApp */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EB97E4E5C425BE7411BA8A /* MedicalApp.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_NUMBER = "$(BUILD_NUMBER)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -199,18 +1011,19 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "$(ENTITLEMENTS_PATH)";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -218,151 +1031,39 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				MARKETING_VERSION = "$(VERSION_NAME)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		907519EA2AFC05E100203800 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		907519EC2AFC05E100203800 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XBNGPCQY3Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MedicalApp/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.medical.app.MedicalApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_NAME = "$(VERSION_NAME)";
 			};
-			name = Debug;
-		};
-		907519ED2AFC05E100203800 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XBNGPCQY3Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MedicalApp/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.medical.app.MedicalApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
+			name = MedicalApp;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		907519D22AFC05DF00203800 /* Build configuration list for PBXProject "MedicalApp" */ = {
+		E20A06D197B46A05F4214350 /* Build configuration list for PBXNativeTarget "MedicalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				907519E92AFC05E100203800 /* Debug */,
-				907519EA2AFC05E100203800 /* Release */,
+				C47CE37CC228AA7A47C75B78 /* MedicalApp */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = MedicalApp;
 		};
-		907519EB2AFC05E100203800 /* Build configuration list for PBXNativeTarget "MedicalApp" */ = {
+		F5CA4CE42D05DBE951D7D66F /* Build configuration list for PBXProject "MedicalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				907519EC2AFC05E100203800 /* Debug */,
-				907519ED2AFC05E100203800 /* Release */,
+				FE14E30B2019F0AC7DEE1917 /* MedicalApp */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = MedicalApp;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 907519CF2AFC05DF00203800 /* Project object */;
+	rootObject = D84A0B501303A42A2A212391 /* Project object */;
 }

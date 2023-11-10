@@ -1,0 +1,28 @@
+// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+import UIKit
+
+enum ImageAsset {
+    enum Image: String {
+    {% for asset in catalogs.first.assets %}
+        {% if asset.type == 'group' %}
+            {% for image in asset.items %}
+                {% if image.type == 'image' %}
+        case {{ image.name|snakeToCamelCase|lowerFirstWord }} = "{{ image.name }}"
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% if asset.type == 'image' %}
+        case {{ asset.name|snakeToCamelCase|lowerFirstWord }} = "{{ asset.name }}"
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+        var image: UIImage {
+            UIImage(named: self.rawValue)!
+        }
+        
+        var name: String {
+            self.rawValue
+        } 
+    }
+}

@@ -1,0 +1,49 @@
+name: MedicalApp
+options:
+  deploymentTarget:
+    iOS: $(IPHONEOS_DEPLOYMENT_TARGET)
+configs:
+  MedicalApp: debug
+configFiles:
+  MedicalApp: Config/MedicalApp.xcconfig
+settings:
+  base:
+    # USER DEFINED PROJECT
+    BUILD_NUMBER: $(BUILD_NUMBER)
+    VERSION_NAME: $(VERSION_NAME)
+    CURRENT_PROJECT_VERSION: $(BUILD_NUMBER)
+    MARKETING_VERSION: $(VERSION_NAME)
+    SDKROOT: iphoneos
+    INFOPLIST_KEY_UILaunchStoryboardName: LaunchScreen
+    CODE_SIGN_ENTITLEMENTS: $(ENTITLEMENTS_PATH)
+    ONLY_ACTIVE_ARCH: YES
+targets:
+  MedicalApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: MedicalApp
+        name: MedicalApp
+    settings:
+      base:
+      # USER DEFINED TARGET
+        INFOPLIST_FILE: MedicalApp/Main/Info.plist
+        GENERATE_INFOPLIST_FILE: YES
+      configs:
+        MedicalApp:
+          PRODUCT_BUNDLE_IDENTIFIER: $(PRODUCT_BUNDLE_IDENTIFIER)
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+          PRODUCT_NAME: $(PRODUCT_NAME)
+    postBuildScripts:
+      - name: SwiftGen
+        path: Script/swiftgen.sh
+        basedOnDependencyAnalysis: NO
+        showEnvVars: YES
+schemes:
+  - name: MedicalApp
+    shared: true
+    build:
+      targets: MedicalApp
+    run:
+      config: Debug
+      executable: MedicalApp

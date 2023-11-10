@@ -1,0 +1,14 @@
+xcassets:
+  - inputs: "MedicalApp/Resources/Colors/Colors.xcassets"
+    outputs:
+      templatePath: "MedicalAppColor.stencil"
+      output: "MedicalApp/Resources/Colors/Colors.swift"
+  - inputs: "MedicalApp/Resources/Images/Assets.xcassets"
+    outputs:
+      templatePath: "MedicalAppImage.stencil"
+      output: "MedicalApp/Resources/Images/Image.swift"
+fonts:
+  inputs: "MedicalApp/Resources/Fonts/"
+  outputs:
+    templateName: swift4
+    output: "MedicalApp/Resources/Fonts/Fonts.swift"
