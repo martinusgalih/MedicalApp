@@ -1,6 +1,6 @@
 # MedicalApp
 
-Deskripsi proyek Anda di sini.
+Welcome to my practice project for exploring SwiftGen and XcodeGen!
 
 ## Setup
 
