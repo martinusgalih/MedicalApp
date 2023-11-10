@@ -5,12 +5,13 @@ Welcome to my practice project for exploring SwiftGen and XcodeGen!
 ## Setup
 
 1. **Clone Repository:**
-      ```bash
+   ```bash
    git clone https://github.com/martinusgalih/MedicalApp.git
    cd /project-path
 2. **Setup Script:**
-```bash
+   This script will handle initial configuration and dependency installation.
+   ```bash
   ./setup
-  This script will handle initial configuration and dependency installation.
+  
 
 
